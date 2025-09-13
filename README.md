@@ -4,7 +4,7 @@ The App Store is a simple e-commerce web app that allows users to browse, search
 and sort products fetched from the Fake Store API. It also includes a shopping cart where users can add or
 
 ### Demo
-[https://app-store-nu.vercel.app/](https://app-store-nu.vercel.app/))
+[https://app-store-nu.vercel.app/](https://app-store-nu.vercel.app/)
 
 ---
 
@@ -26,6 +26,5 @@ and sort products fetched from the Fake Store API. It also includes a shopping c
 - JavaScript (ES6+)  
 - [Fake Store API](https://fakestoreapi.com/)  
 
----
 
 ## 📂 Project Structure
