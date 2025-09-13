@@ -173,12 +173,37 @@ function renderProducts(arr) {
     addCardButton.addEventListener("click", function () {
       addToCart(e);
     });
+        viewCardButton.addEventListener("click", function () {
+      showProductDetails(e);
+    });
 
     cardItemDiv.append(img, h3, p, viewCardButton, addCardButton);
     productsDiv.append(cardItemDiv);
   });
+
 }
 
+function showProductDetails(product) {
+     
+  const modal = document.getElementById("productModal");
+  const modalContent = document.getElementById("modalContent");
+
+modalContent.innerHTML = `
+  <div class="modal-card">
+    <h2 class="modal-title">${product.title}</h2>
+    <img class="modal-img" src="${product.image}" alt="${product.title}"/>
+    <p class="modal-price">Price: $ ${product.price}</p>
+    <p class="modal-category">Category: ${product.category}</p>
+    <p class="modal-description">Description: ${product.description}</p>
+  </div>
+`;
+
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("productModal").style.display = "none";
+}
 
 document.querySelectorAll(".page").forEach((btn) => {
   btn.addEventListener("click", () => {
