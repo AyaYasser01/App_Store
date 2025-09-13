@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoreApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <!-- Logo ... -->
+            <div class="logo">
+                <h1>My Store</h1>
+            </div>
+            <!-- Search ... -->
+            <div id="search">
+                <h3>Search for products... </h3>
+                <div>
+                    <input type="text" id="search-input" placeholder="Search for products...">
+
+                    <select id="selectedItems">
+                        <option value="">All Categories</option>
+                        <option value="men's clothing">men's clothing</option>
+                        <option value="jewelery">jewelery</option>
+                        <option value="electronics">electronics</option>
+                        <option value="women's clothing">women's clothing</option>
+                    </select>
+
+                    <input type="number" placeholder="Min Price" id="minPrice">
+                    <input type="number" placeholder="Max Price" id="maxPrice">
+
+                    <select id="sortedItems">
+                        <option value="Price">Sort By Price</option>
+                        <option value="Rating">Sort By Rating</option>
+                        <option value="Name">Sort By Name</option>
+                    </select>
+
+                    <input type="submit" value="Search" id="searchBtn">
+                </div>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <h3> Shopping Cart</h3>
+            <div id="add-cart">
+            </div>
+            <div id="total">
+
+            </div>
+        </div>
+        <!-- Data ... -->
+        <div id="products"></div>
+        <div class="pagination">
+            <button id="prev"> Previous </button>
+            <button class="page" data-page="1"> 1 </button>
+            <button class="page" data-page="2"> 2 </button>
+            <button class="page" data-page="3"> 3 </button>
+            <button class="page" data-page="4"> 4 </button>
+            <button id="next"> Next </button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
