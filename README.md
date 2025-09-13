@@ -25,6 +25,3 @@ and sort products fetched from the Fake Store API. It also includes a shopping c
 - CSS3  
 - JavaScript (ES6+)  
 - [Fake Store API](https://fakestoreapi.com/)  
-
-
-## 📂 Project Structure
